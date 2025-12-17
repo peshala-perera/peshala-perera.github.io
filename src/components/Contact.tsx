@@ -10,12 +10,14 @@ const testimonials = [
   {
     name: "Dion Jansz",
     title: "Cabin Manager, SriLankan Airlines",
-    quote: "Exceptional professional with outstanding technical skills and work ethic.",
+    quote:
+      "Exceptional professional with outstanding technical skills and work ethic.",
   },
   {
     name: "Pasan Heiyantuduwa",
     title: "Data Analyst, MAS Holdings",
-    quote: "Brilliant engineer who consistently delivers high-quality solutions.",
+    quote:
+      "Brilliant engineer who consistently delivers high-quality solutions.",
   },
 ];
 
@@ -37,9 +39,17 @@ export const Contact = () => {
   };
 
   const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    const cvPdf = "/assets/my-cv.pdf";
+    link.href = cvPdf;
+    link.download = "Peshala_Perera_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     toast({
       title: "CV Download",
-      description: "CV download will be available soon.",
+      description: "Your CV is downloading...",
     });
   };
 
@@ -56,23 +66,34 @@ export const Contact = () => {
             <div className="space-y-6">
               <Card className="p-6 border-border/50 backdrop-blur-sm">
                 <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-4">
-                  <a href="mailto:peshala.s.perera@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth">
+                  <a
+                    href="mailto:peshala.s.perera@gmail.com"
+                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     <Mail className="h-5 w-5" />
                     <span>peshala.s.perera@gmail.com</span>
                   </a>
-                  
-                  <a href="tel:+94740201607" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth">
+
+                  <a
+                    href="tel:+94740201607"
+                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     <Phone className="h-5 w-5" />
                     <span>+94 74 020 1607</span>
                   </a>
-                  
-                  <a href="https://linkedin.com/in/peshala-perera-994b411b9" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth">
+
+                  <a
+                    href="https://linkedin.com/in/peshala-perera-994b411b9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-smooth"
+                  >
                     <Linkedin className="h-5 w-5" />
                     <span>linkedin.com/in/peshala-perera-994b411b9</span>
                   </a>
-                  
+
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="h-5 w-5" />
                     <span>Sri Lanka</span>
@@ -97,9 +118,15 @@ export const Contact = () => {
                 <div className="space-y-4">
                   {testimonials.map((testimonial, index) => (
                     <div key={index} className="border-l-2 border-primary pl-4">
-                      <p className="text-sm text-muted-foreground italic mb-2">"{testimonial.quote}"</p>
-                      <p className="text-sm font-semibold">{testimonial.name}</p>
-                      <p className="text-xs text-muted-foreground">{testimonial.title}</p>
+                      <p className="text-sm text-muted-foreground italic mb-2">
+                        "{testimonial.quote}"
+                      </p>
+                      <p className="text-sm font-semibold">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {testimonial.title}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -109,37 +136,43 @@ export const Contact = () => {
             {/* Contact Form */}
             <Card className="p-6 border-border/50 backdrop-blur-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Input
                     placeholder="Your Name"
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Input
                     type="email"
                     placeholder="Your Email"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Textarea
                     placeholder="Your Message"
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     required
                     rows={6}
                   />
                 </div>
-                
+
                 <Button
                   type="submit"
                   className="w-full gradient-primary text-white hover:opacity-90 transition-smooth"

@@ -4,26 +4,26 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company: "XGen Group",
-    period: "Aug 2025 – Present",
-    highlights: [
-      "Architected and maintained CI/CD pipelines using Docker",
-      "Integrated AWS S3 and document workflows into fintech platforms",
-      "Conducted code reviews, pair-programming, and technical demos",
-      "Developed full-stack fintech solutions with Laravel, React, Vue, Node.js, and Flutter",
-    ],
-    current: true,
-  },
-  {
     title: "Senior Software Engineer",
     company: "Ansely Pvt Ltd",
-    period: "Apr 2023 – Aug 2025",
+    period: "Aug 2025 – Present",
     highlights: [
       "Designed and developed scalable backend systems with high reliability",
       "Built and maintained RESTful APIs and microservices",
       "Mentored engineers through code reviews and design sessions",
       "Drove sprint planning, technical strategy, and collaboration",
+    ],
+    current: true,
+  },
+  {
+    title: "Software Engineer",
+    company: "XGen Group",
+    period: "Apr 2023 – Aug 2025",
+    highlights: [
+      "Architected and maintained CI/CD pipelines using Docker",
+      "Integrated AWS S3 and document workflows into fintech platforms",
+      "Conducted code reviews, pair-programming, and technical demos",
+      "Developed full-stack fintech solutions with Laravel, React, Vue, Node.js, and Flutter",
     ],
   },
   {

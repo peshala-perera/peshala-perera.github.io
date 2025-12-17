@@ -13,6 +13,11 @@ const education = [
     institution: "BCS",
     period: "2020 – 2023",
   },
+    {
+    degree: "GCE A/L",
+    institution: "Devi Balika Vidyalaya, Colombo 08",
+    period: "2019",
+  },
 ];
 
 const publications = [
