@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const education = [
   {
-    degree: "BSc in Computer Science",
+    degree: "BSc (Hons) Computer Science",
     institution: "University of Westminster",
     period: "2020 – 2025",
   },
@@ -24,12 +24,17 @@ const publications = [
   {
     title: "Recent Trends and Challenges in Assistive Applications for Sinhala-Speaking Adults with Dyslexia",
     venue: "IEEE, 2025",
-    link: "#",
+    link: "https://ieeexplore.ieee.org/document/10963092",
   },
   {
     title: "A Low-Resource Speech-Driven NLP Pipeline for Sinhala Dyslexia Assistance",
     venue: "ACL, 2025",
-    link: "#",
+    link: "https://acl-bg.org/proceedings/2025/RANLP%202025/pdf/2025.ranlp-1.106.pdf",
+  },
+  {
+    title: "A Low-Resource Speech-Driven NLP Pipeline for Sinhala Dyslexia Assistance",
+    venue: "ACL, 2025",
+    link: "https://arxiv.org/abs/2510.04750",
   },
 ];
 
@@ -84,18 +89,6 @@ export const Education = () => {
                   </div>
                 </Card>
               ))}
-
-              <Card className="p-6 border-border/50 backdrop-blur-sm transition-smooth hover:border-primary/50">
-                <div className="flex items-center justify-between">
-                  <p className="font-semibold">More publications on arXiv</p>
-                  <Button variant="outline" size="sm" asChild className="transition-smooth hover:border-primary">
-                    <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      Visit arXiv
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  </Button>
-                </div>
-              </Card>
             </div>
           </div>
         </div>

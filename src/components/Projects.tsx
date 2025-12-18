@@ -86,6 +86,199 @@ const projects = [
   },
 ];
 
+const moreProjects = [
+  {
+    title: "SecureAPI – Secure Country Middleware",
+    description:
+      "A secure API middleware that bridges users with RestCountries.com, built with FastAPI, SQLite, and React. Provides user registration, login, API key management, and access to country data via a secure API.",
+    tech: [
+      "FastAPI",
+      "SQLite",
+      "React + TypeScript",
+      "JWT",
+      "Docker",
+      "Swagger/OpenAPI",
+      "SQLAlchemy",
+      "Bcrypt",
+    ],
+    highlights: [
+      "User registration & secure login (JWT)",
+      "API key generation & authentication",
+      "Country data middleware from RestCountries API",
+      "API key usage tracking (count & timestamp)",
+      "Admin panel to view all users",
+      "Docker support for backend deployment",
+      "Fully documented API using Swagger",
+      "Secure SQLite schema with normalized 3NF",
+    ],
+    github: "https://github.com/PeshalaPerera/6COSC022W-CW-1/",
+    demo: "https://6-cosc-022-w-cw-1.vercel.app/",
+  },
+  {
+    title: "TravelTales – Immersive Global Travel Blog",
+    description:
+      "TravelTales is a feature-rich, full-stack travel storytelling platform where users can explore vivid travel tales narrated by humans from around the world. Built with Express.js, React, SQLite, and Docker, it allows travel enthusiasts to share their stories, engage with fellow explorers, and discover the beauty of the world through diverse narratives. The platform offers intuitive features like country-based story filtering, real-time engagement through comments and likes, a modern WYSIWYG editor for creating posts, and JWT-based authentication for secure user login. Designed with a responsive frontend powered by React, TailwindCSS, and React Query, TravelTales is an interactive and scalable platform that brings the global travel community together.",
+    tech: [
+      "React 18 with Vite",
+      "Tailwind CSS",
+      "React Router",
+      "React Query",
+      "React Quill",
+      "Clerk Auth",
+      "React Toastify",
+      "ImageKit",
+      "Node.js",
+      "Express.js",
+      "Prisma ORM",
+      "JWT (jsonwebtoken)",
+      "Bcrypt",
+      "Multer",
+      "Swagger (OpenAPI)",
+      "CORS",
+      "dotenv",
+      "SQLite",
+      "Docker",
+      "Postman",
+      "ESLint",
+      "Prettier",
+      "Git",
+      "GitHub",
+      "SecureAPI (Coursework 1 Integration)",
+    ],
+    highlights: [
+      "Create & share travel stories with title, content, image, country, and date",
+      "Country-based filtering using SecureAPI microservice (CW1)",
+      "User authentication with JWT and hashed passwords",
+      "Follow system for connecting with other travelers",
+      "Like posts, view like counts, and toggle preferences",
+      "Comment on posts with full CRUD functionality",
+      "Search and sort by country, popularity, and date",
+      "Admin tools for user and post management",
+      "Swagger-powered API docs with complete OpenAPI schema",
+      "Fully Dockerized deployment for both frontend and backend",
+    ],
+    github: "https://github.com/PeshalaPerera/6COSC022W-CW-2",
+    demo: "https://traveltales.vercel.app/",
+  },
+  {
+    title: "Email and Spam Filtering using Machine Learning",
+    description:
+      "This project focuses on creating an intelligent email spam filter using machine learning techniques. The model is trained to classify emails into spam or non-spam categories based on their content. The core idea is to use a dataset of labeled emails to train a Multinomial Naive Bayes classifier, leveraging text vectorization techniques like CountVectorizer to convert email text into numerical features. The solution is designed to improve the email experience by filtering out unwanted spam, ensuring that users only interact with relevant and legitimate messages. This project is for anyone interested in machine learning applications in natural language processing (NLP), and it is particularly valuable for email service providers or organizations dealing with a large volume of emails.",
+    tech: [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib & Seaborn",
+      "Jupyter Notebook",
+      "Flask",
+      "Streamlit",
+    ],
+    highlights: [
+      "Spam Email Classification",
+      "Text Data Vectorization",
+      "High Accuracy Model",
+      "Interactive Deployment",
+    ],
+    github: "https://github.com/peshala-perera/E-mail-and-spam-filtering",
+    demo: "https://colab.research.google.com/github/PeshalaPerera/E-mail-and-spam-filtering/blob/main/Cw1_w1810821_PeshalaPerera.ipynb",
+  },
+  {
+    title: "Astro Kids- University Web Development Coursework Group Project",
+    description:
+      "AstroKids is a web application created as part of a university coursework project for a web development course. The website showcases a variety of features designed to engage users in a fun and interactive learning experience. Built with HTML, CSS, and JavaScript, it includes pages for About Us, Contact Us, Shop, and many more. The project emphasizes clean design, usability, and interactivity.",
+    tech: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    highlights: [
+      "Comprehensive Multi-Page Design",
+      "Engaging Interactivity",
+      "Team Showcase",
+      "Visually Rich Content",
+    ],
+    github: "https://github.comhttps://github.com/peshala-perera/Astro_kids",
+    demo: "https://astro-kids-three.vercel.app",
+  },
+  {
+    title: "News-Mag - Modern News Magazine Web Application",
+    description:
+      "News-Mag is a modern news magazine web application built with React and Vite, designed for fast development and efficient performance. The app pulls the latest news from various sources via the News API, displaying articles in an easily digestible format. The use of TypeScript and ESLint ensures high code quality and consistency, making the application maintainable and scalable.",
+    tech: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "ESLint",
+      "News API",
+      "Node.js & npm",
+    ],
+    highlights: [
+      "Real-Time News Fetching",
+      "Fast Development with Vite",
+      "Customizable",
+    ],
+    github: "https://github.com/peshala-perera/News-Mag",
+    demo: "https://news-mag-virid.vercel.app",
+  },
+  {
+    title: "Geo Location Finder",
+    description:
+      "The Geo Location Finder is a React-based web app that allows users to enter an IP address and get detailed geographical information about the location associated with that IP. The app fetches data using a free geolocation API (freegeoip.app), providing users with insights like country, city, region, time zone, latitude, and longitude. The app also validates the entered IP address to ensure it's in the correct format, offering real-time feedback. This tool is useful for developers or anyone interested in tracking the location of IP addresses in real-time.",
+    tech: [
+      "React",
+      "CSS",
+      "FreeGeoIP API",
+      "React Icons",
+      "Jest",
+      "React Testing Library",
+    ],
+    highlights: ["Real-Time GeoLocation Data", "Interactive Visualization"],
+    github: "https://github.com/peshala-perera/Geo-Location-Finder",
+    demo: "https://news-mag-virid.vercel.app",
+  },
+  {
+    title: "OSM Map with Search & Routing",
+    description:
+      "The OSM Map with Search & Routing project provides an interactive web application that allows users to search for two locations and display a route between them on an OpenStreetMap (OSM) map. The tool is designed for anyone needing a simple way to visualize routes between two geographical points. Whether it's for personal use, logistics, or travel planning, the app helps users quickly find routes by leveraging OpenStreetMap for maps and OSRM for routing. The app is intuitive, easy to use, and doesn't require any API keys, making it accessible for a wide range of users.",
+    tech: [
+      "Leaflet.js",
+      "OpenStreetMap (OSM)",
+      "OSRM",
+      "HTML/CSS",
+      "JavaScript",
+      "Nominatim API",
+    ],
+    highlights: [
+      "Interactive Map",
+      "Real-time Routing",
+      "Geocoding Integration",
+      "No API Key Needed",
+    ],
+    github: "https://github.com/peshala-perera/openStreetMap/",
+    demo: "https://news-mag-virid.vercel.app",
+  },
+  {
+    title: "Sri Lankan AI Voice Chat Application",
+    description:
+      "The Sri Lankan AI Voice Chat Application is a Next.js-based web application that allows users to have voice conversations with an AI agent in three languages: English, Sinhala (සිංහල), and Tamil (தமிழ்). The application supports seamless speech-to-text conversion, real-time translation between the languages, and automatic text-to-speech functionality. This app is specifically optimized for the Sri Lankan community, providing a culturally relevant and accessible interface for diverse users. By integrating modern voice technology, it enables people to interact with AI in their native languages with real-time responses.",
+    tech: [
+      "Next.js",
+      "Web Speech API",
+      "Google Translate API",
+      "TypeScript",
+      "Tailwind CSS",
+      "AI Agent API",
+      "shadcn/ui",
+    ],
+    highlights: [
+      "Multi-Language Support",
+      "Real-Time Speech-to-Text & Translation",
+      "Text-to-Speech Integration",
+      "Responsive Design for All Devices",
+      "AI Agent Integration",
+    ],
+    github: "https://github.com/peshala-perera/multilingual-voice-chat/",
+    demo: "https://news-mag-virid.vercel.app",
+  },
+];
+
 export const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-card/50">
@@ -178,7 +371,7 @@ export const Projects = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
+          {moreProjects.map((project, index) => (
             <Card
               key={index}
               className="p-6 border-border/50 backdrop-blur-sm transition-smooth hover:scale-105 hover:border-primary/50 flex flex-col"
