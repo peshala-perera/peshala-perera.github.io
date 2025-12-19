@@ -20,8 +20,8 @@ const projects = [
       "CI/CD pipelines",
       "Payment gateway integration",
     ],
-    github: "https://github.com",
-    demo: "https://example.com",
+    demo: "https://digital-lode-gate.lovable.app/",
+    github: "https://github.com/peshala-perera/digital-lode-gate",
   },
   {
     title: "EduLink",
@@ -33,8 +33,8 @@ const projects = [
       "Real-time dashboards",
       "Video streaming",
     ],
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/peshala-perera/edulink-hub.git",
+    demo: "https://edulink-progress-hub.lovable.app",
   },
   {
     title: "Dyslexia NLP Assistant",
@@ -46,8 +46,8 @@ const projects = [
       "NLP pipeline",
       "Accessibility features",
     ],
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/PeshalaPerera/sinhala-dyslexia-assistant",
+    demo: "https://sinhala-dyslexia-assistant.vercel.app/",
   },
   {
     title: "CloudSync",
@@ -55,8 +55,8 @@ const projects = [
       "Enterprise file synchronization and collaboration platform with real-time updates and version control.",
     tech: ["Node.js", "React", "AWS S3", "WebSockets"],
     highlights: ["Real-time sync", "Version control", "Team collaboration"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/peshala-perera/edulink-hub.git",
+    demo: "https://edulink-progress-hub.lovable.app",
   },
   {
     title: "HealthTrack",
@@ -232,6 +232,57 @@ const moreProjects = [
     highlights: ["Real-Time GeoLocation Data", "Interactive Visualization"],
     github: "https://github.com/peshala-perera/Geo-Location-Finder",
     demo: "https://news-mag-virid.vercel.app",
+  },
+  {
+    title: "MovieLand",
+    description:
+      "MovieLand is a simple web application built with React that allows users to search for movies and view their details. It pulls data from the OMDb API, enabling users to search by title and explore detailed information about each movie.",
+    tech: ["React", "JavaScript", "CSS", "OMDb API"],
+    highlights: [
+      "Users can search for movies by title through an intuitive search bar",
+      "Search results dynamically update as the user types",
+      "Each movie listing provides details such as release year, poster, and type",
+      "Responsive design ensures a seamless experience across devices",
+    ],
+    github: "https://github.com/PeshalaPerera/movie-land",
+    demo: "https://movie-land-six-flax.vercel.app/",
+  },
+  {
+    title: "Sinhala Dyslexia Assistant",
+    description:
+      "A FastAPI-powered backend system designed to support Sinhala-speaking individuals with dyslexia. The API integrates multiple modern NLP and deep learning techniques to offer speech recognition, text correction, error classification, and text-to-speech functionalities.",
+    tech: [
+      "FastAPI",
+      "Hugging Face Transformers",
+      "Whisper",
+      "gTTS",
+      "PyTorch",
+      "Docker",
+    ],
+    highlights: [
+      "Speech-to-Text (STT) converts Sinhala audio to text using Whisper",
+      "Text Correction includes rule-based methods, mT5 spell correction, and Mistral AI sentence correction",
+      "Error Type Classification predicts dyslexia-related errors with SinBERT",
+      "Text-to-Speech (TTS) generates spoken Sinhala audio from text using gTTS",
+      "Comprehensive evaluation tools like BLEU, GLEU, Accuracy, WER, and Edit Distance",
+      "Supports audio upload with Google Drive integration",
+    ],
+    github: "https://github.com/PeshalaPerera/sinhala-dyslexia-assistant",
+    demo: "https://sinhala-dyslexia-assistant.vercel.app/",
+  },
+  {
+    title: "AI Image Generator",
+    description:
+      "A simple React-based AI image generation application using Create React App. This project serves as a basic boilerplate for building AI image generation apps.",
+    tech: ["React", "Create React App", "Node.js", "npm"],
+    highlights: [
+      "Basic project setup with Create React App",
+      "Supports easy development with `npm start`",
+      "Build for production with optimized settings (`npm run build`)",
+      "Simple structure for AI image generation integration",
+    ],
+    github: "https://github.com/PeshalaPerera/ai-image-generator",
+    demo: "Link to live demo or deployment if available",
   },
   {
     title: "OSM Map with Search & Routing",
